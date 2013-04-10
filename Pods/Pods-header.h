@@ -7,5 +7,6 @@
 #define __POD_ASIHTTPRequest_S3
 #define __POD_FMDB
 #define __POD_JSONKit
+#define __POD_MBAlertView
 #define __POD_Reachability
 #define __POD_RegexKitLite

@@ -48,7 +48,6 @@
 		58B833C838111D8E8BC74AA5 /* Bee_Sandbox.mm in Sources */ = {isa = PBXBuildFile; fileRef = 58B83207F96D14F6FDA091B1 /* Bee_Sandbox.mm */; };
 		58B833F6046C72BD7E29D1F1 /* NSDictionary+BeeExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B83EBC936EC7B4757311E1 /* NSDictionary+BeeExtension.m */; };
 		58B8345EADAACFCE88D56923 /* Bee_UITableBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B83FB6232A1B3198E7B097 /* Bee_UITableBoard.m */; };
-		58B834926294A57C64A83379 /* MBSpinningCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B83FBFCEAE4C668F6E79EC /* MBSpinningCircle.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		58B834A84CA7896D78564C34 /* Bee_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B8312897C54B03DF975B4E /* Bee_Model.m */; };
 		58B834AB8B77401F2C00327A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B8391F32239A54BD74F7FE /* main.m */; };
 		58B835081D16565BB0455FD1 /* NSObject+BeeDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B8330C6E2169A6F4AB5D76 /* NSObject+BeeDatabase.m */; };
@@ -184,7 +183,6 @@
 		58B8324E3579E3F73DED840E /* Bee_Thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bee_Thread.h; sourceTree = "<group>"; };
 		58B832884242E36EE4B7D12D /* Bee_Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bee_Database.m; sourceTree = "<group>"; };
 		58B8329543FFCF0871EC67EC /* NSObject+BeeTicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BeeTicker.m"; sourceTree = "<group>"; };
-		58B832B9D394C60638924F1C /* MBSpinningCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBSpinningCircle.h; sourceTree = "<group>"; };
 		58B832C78AD8E12DBE1FB0E8 /* Bee_DebugUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bee_DebugUtility.h; sourceTree = "<group>"; };
 		58B832FB38B728B2D43F34EF /* NSNumber+BeeExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+BeeExtension.h"; sourceTree = "<group>"; };
 		58B8330C6E2169A6F4AB5D76 /* NSObject+BeeDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BeeDatabase.m"; sourceTree = "<group>"; };
@@ -363,7 +361,6 @@
 		58B83FACCFAAEFA67A71C62B /* Bee_UIScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bee_UIScrollView.m; sourceTree = "<group>"; };
 		58B83FB00E4464D72737ED58 /* UIView+UU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UU.h"; sourceTree = "<group>"; };
 		58B83FB6232A1B3198E7B097 /* Bee_UITableBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bee_UITableBoard.m; sourceTree = "<group>"; };
-		58B83FBFCEAE4C668F6E79EC /* MBSpinningCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBSpinningCircle.m; sourceTree = "<group>"; };
 		58B83FF78A7462B8957F2167 /* NSObject+BeeTicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BeeTicker.h"; sourceTree = "<group>"; };
 		E1780534A7254EDBAF8FB275 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -691,8 +688,6 @@
 			children = (
 				58B83FB00E4464D72737ED58 /* UIView+UU.h */,
 				58B8349E32D16CEB745EC48D /* UIView+UU.m */,
-				58B832B9D394C60638924F1C /* MBSpinningCircle.h */,
-				58B83FBFCEAE4C668F6E79EC /* MBSpinningCircle.m */,
 			);
 			path = ExternaFile;
 			sourceTree = "<group>";
@@ -978,7 +973,6 @@
 				58B83B9EE122290D4B211D4D /* UIView+LongPressGestureRecognizer.m in Sources */,
 				58B837FB1DBC68B26FDACCBE /* DPlibBee.m in Sources */,
 				58B835F5DF33C31B2D2E31C4 /* UIView+UU.m in Sources */,
-				58B834926294A57C64A83379 /* MBSpinningCircle.m in Sources */,
 				189DC40417157143000832E4 /* ASIHTTPRequest+Bee.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
