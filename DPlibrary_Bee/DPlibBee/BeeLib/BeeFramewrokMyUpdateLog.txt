@@ -1,0 +1,54 @@
+
+// 这里是对Bee framework源码的更改日志
+为了使Bee framework 的代码能够更好的适应项目的需求，特此对源码某些地方进行修改，所有修改日志均已记录
+
+1. 修改了 BeeUIImageView的加载机制，改成可以加载本地的图片
+2. 修改了LOG的打印机制，现在可以显示打印所在的方法以及行数 并且可以添加换行对齐的符号
+3. 修改了BeeUIImageView对圆角图片的处理
+4.修改了BeeUITableBoard中 searchBar在上面时，显示位置不正确的问题 在 
+	- (void)layoutTableView:(BOOL)animated 方法中，添加了
+          if(BeeUITableBoard.SEARCHBAR_STYLE_TOP == self.searchBarStyle)
+               tableFrame.origin.y = SEARCH_BAR_HEIGHT;
+
+5. 将CC的打印函数实现由BeeLog改为 BeeCC ，这样可以更加清晰的打印对应的 "方法" "行号" 以及清晰的格式和对快速换行符的支持
+
+6. 修改了数组创建方式，采用NoRetain的方式，解决了页面不能释放的问题（由郭大帮助解决）
+
+7.在做数据库查询的时候，如果是做遍历，调用 Class.DB, 在执行DB语句的时候会将表名 添加到_from中，并且接下来的操作resultArray时，没有清空_from中的数据，这样再执行其他操作的时候，就会导致sql语句发生错误。无法正确的进行操作。做了如下修改，暂时可以使用给了，等待大神的彻底解决方案
+修改Bee_DataBase中- (NSArray *)resultArray方法中
+由
+    return [NSArray arrayWithArray:_resultArray];
+改为
+    NSArray *myResultArray = [NSArray arrayWithArray:_resultArray];
+    [self __internalResetSelect];
+    return myResultArray;
+
+8.修改了获取键盘的高度
+
+9.修改了BeeTextView的信号传递，添加了object 为textView.text的属性
+
+10.A-》B(弹出键盘，点击小虫子) -》A (点击小虫子) 必然会崩溃，错误提示是因为索引越界，可能原因是因为在有显示键盘的情况下，DEBUGGER统计的有些问题
+
+11.为nav button的custom样式添加了监听touch_back_button 和 touch_done_button的监听。
+
+12.将BeeImageCache的图片加载方式修改为内存和本都获取不到后，再去判断工程中是否存在，然后获取，最后存储到内存Cache中
+
+13.将性能测试时间差由秒改为毫秒级别，更容易看懂 BeePerformance 类中
+
+14.在使用BeeActiveRecord的时候，一定要注意你的成员变量的名称大小写问题，如果你的成员变量是nickName(注意.M是大写)这时操作基于BeeActiveRecord的数据库时，不会有什么问题，但是如果你使用recordWithDictionary方法时，如果你dic中字段为nickname ,那么这个时候，nickName这个字段就会为空
+
+15.AlertActionSheet的库和bee有些冲突，默认会把Debugger的一个视图对象加到里面，导致下次无法正常点击。。
+
+16.为了解决ActionSheet的bug 为BeeDebugTapIndicator增加了一个tag值 tag = 9999
+
+17.将BeeUITableBoard的 下拉刷新高度 由80改为60，因为箭头的高度就是60
+
+18.在Bee_UITableBoard里面将 - (BeeUITableViewCell *)dequeueWithContentClass:(Class)clazz 中,添加了group样式下对LabelCell和ButtonCell 去掉group样式边框的代码
+
+19.增加了错误提示，这样在所有的tableView中都可以直接使用
+
+20.增加了消息显示字段
+
+21.在Bee_Network中 requestFail中统一处理了错误，提示为“网络不给力呀!" 只限定为post请求
+
+22,修改了网络错误的时候请求的提醒方式，现在是在错误提示后，如果是POST请求，择发送一个notify，在UIBoard中进行接收，有一个showError的开关，默认是开着的。
