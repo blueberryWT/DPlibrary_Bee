@@ -8,11 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		07CE993A445141A68A62D493 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1780534A7254EDBAF8FB275 /* libPods.a */; };
-		1869FC951716B31400202BB3 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869FC8C1716B31400202BB3 /* FMDatabase.m */; };
-		1869FC961716B31400202BB3 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869FC8E1716B31400202BB3 /* FMDatabaseAdditions.m */; };
-		1869FC971716B31400202BB3 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869FC901716B31400202BB3 /* FMDatabasePool.m */; };
-		1869FC981716B31400202BB3 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869FC921716B31400202BB3 /* FMDatabaseQueue.m */; };
-		1869FC991716B31400202BB3 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869FC941716B31400202BB3 /* FMResultSet.m */; };
 		1869FC9B1716B33B00202BB3 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1869FC9A1716B33B00202BB3 /* libsqlite3.0.dylib */; };
 		189DC40417157143000832E4 /* ASIHTTPRequest+Bee.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DC40317157143000832E4 /* ASIHTTPRequest+Bee.m */; };
 		18E0770217155E1C001B26D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E0770117155E1C001B26D1 /* UIKit.framework */; };
@@ -143,16 +138,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1869FC8B1716B31400202BB3 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		1869FC8C1716B31400202BB3 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
-		1869FC8D1716B31400202BB3 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		1869FC8E1716B31400202BB3 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		1869FC8F1716B31400202BB3 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
-		1869FC901716B31400202BB3 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
-		1869FC911716B31400202BB3 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
-		1869FC921716B31400202BB3 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
-		1869FC931716B31400202BB3 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		1869FC941716B31400202BB3 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		1869FC9A1716B33B00202BB3 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		189DC40217157143000832E4 /* ASIHTTPRequest+Bee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ASIHTTPRequest+Bee.h"; sourceTree = "<group>"; };
 		189DC40317157143000832E4 /* ASIHTTPRequest+Bee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ASIHTTPRequest+Bee.m"; sourceTree = "<group>"; };
@@ -400,23 +385,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1869FC8A1716B31400202BB3 /* FMDB */ = {
-			isa = PBXGroup;
-			children = (
-				1869FC8B1716B31400202BB3 /* FMDatabase.h */,
-				1869FC8C1716B31400202BB3 /* FMDatabase.m */,
-				1869FC8D1716B31400202BB3 /* FMDatabaseAdditions.h */,
-				1869FC8E1716B31400202BB3 /* FMDatabaseAdditions.m */,
-				1869FC8F1716B31400202BB3 /* FMDatabasePool.h */,
-				1869FC901716B31400202BB3 /* FMDatabasePool.m */,
-				1869FC911716B31400202BB3 /* FMDatabaseQueue.h */,
-				1869FC921716B31400202BB3 /* FMDatabaseQueue.m */,
-				1869FC931716B31400202BB3 /* FMResultSet.h */,
-				1869FC941716B31400202BB3 /* FMResultSet.m */,
-			);
-			path = FMDB;
-			sourceTree = "<group>";
-		};
 		18E076F517155E1C001B26D1 = {
 			isa = PBXGroup;
 			children = (
@@ -452,7 +420,6 @@
 		18E0770717155E1C001B26D1 /* DPlibrary_Bee */ = {
 			isa = PBXGroup;
 			children = (
-				1869FC8A1716B31400202BB3 /* FMDB */,
 				18E0770817155E1C001B26D1 /* Supporting Files */,
 				58B8330A65D2057DF2FA5F31 /* Demo */,
 				58B837D5A0A3934F11C0741C /* DPlibBee */,
@@ -1011,11 +978,6 @@
 				58B837FB1DBC68B26FDACCBE /* DPlibBee.m in Sources */,
 				58B835F5DF33C31B2D2E31C4 /* UIView+UU.m in Sources */,
 				189DC40417157143000832E4 /* ASIHTTPRequest+Bee.m in Sources */,
-				1869FC951716B31400202BB3 /* FMDatabase.m in Sources */,
-				1869FC961716B31400202BB3 /* FMDatabaseAdditions.m in Sources */,
-				1869FC971716B31400202BB3 /* FMDatabasePool.m in Sources */,
-				1869FC981716B31400202BB3 /* FMDatabaseQueue.m in Sources */,
-				1869FC991716B31400202BB3 /* FMResultSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
