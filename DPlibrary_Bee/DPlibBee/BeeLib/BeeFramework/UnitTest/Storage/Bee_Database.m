@@ -896,7 +896,7 @@ static NSUInteger		__identSeed = 1;
 	if ( NO == succed )
 		return NO;
 	
-	NSDictionary * dict = [result resultDict];
+	NSDictionary * dict = [result resultDictionary];
 	if ( nil == dict )
 		return NO;
 	
@@ -1467,7 +1467,7 @@ static NSUInteger		__identSeed = 1;
 	{
 		while ( [result next] )
 		{
-			[_resultArray addObject:[result resultDict]];
+			[_resultArray addObject:[result resultDictionary]];
 		}
 		
 		_resultCount = _resultArray.count;
